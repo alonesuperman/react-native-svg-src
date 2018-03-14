@@ -1,0 +1,28 @@
+{
+  "name": "react-native-svg-src",
+  "version": "0.1.0",
+  "description": "Render an SVG Image from local file such as src. This lib is fork on react-native-svg-uri@1.2.3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alonesuperman/react-native-svg-src.git"
+  },
+  "keywords": [
+    "react-native",
+    "svg",
+    "uri",
+    "url",
+    "src",
+    "local",
+    "file"
+  ],
+  "author": "alonesuperman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alonesuperman/react-native-svg-src/issues"
+  },
+  "homepage": "https://github.com/alonesuperman/react-native-svg-src#readme"
+}
