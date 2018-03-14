@@ -4,8 +4,6 @@ import PropTypes from 'prop-types'
 import xmldom from 'xmldom';
 import resolveAssetSource from 'react-native/Libraries/Image/resolveAssetSource';
 
-import svgs from '../../../img/svgs';
-
 import Svg, {
     Circle,
     Ellipse,
@@ -284,8 +282,8 @@ class SvgSrc extends Component {
 
     render() {
         try {
-            const { src } = this.props;
-            let svgXmlData = svgs[this.props.src];
+            let { src, svgXmlData } = this.props;
+            svgXmlData = src ? src : svgXmlData;
             if (!svgXmlData) {
                 let err_msg = `没有"${this.props.icon}"这个icon`;
                 throw new Error(err_msg);
