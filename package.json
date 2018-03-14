@@ -19,6 +19,16 @@
     "local",
     "file"
   ],
+  "dependencies": {
+    "xmldom": "^0.1.22"
+  },
+  "peerDependencies": {
+    "react-native-svg": "^6.2.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-preset-react-native": "^2.1.0"
+  },
   "author": "alonesuperman",
   "license": "MIT",
   "bugs": {
