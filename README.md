@@ -96,7 +96,7 @@ export default class Svg extends Component {
     let svgXmlData = svgs[this.props.src];
 
     if (!svgXmlData) {
-      let err_msg = `没有"${this.props.src}"这个icon`;
+      let err_msg = `no such icon which called "${this.props.src}"`;
       throw new Error(err_msg);
     }
     return (
@@ -115,6 +115,7 @@ export default class example extends Component {
   render() {
     return (
       <View style={{ height: 100, width: 100}}>
+        {/* foo means foo.svg under your SVGFOLDER */}
         <Svg src="foo" />
       </View>
     )
