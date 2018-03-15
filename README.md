@@ -1,4 +1,4 @@
-# react-native-svg-uri
+# react-native-svg-src
 Render an SVG Image from local file such as src. This lib is fork on react-native-svg-uri@1.2.3. But I will keep updating for this one.
 
 Install library from `npm`
