@@ -313,7 +313,7 @@ class SvgSrc extends Component {
 }
 
 SvgSrc.propTypes = {
-    style: PropTypes.object,
+    style: PropTypes.oneOfType([PropTypes.object, PropTypes.number]),
     width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     svgXmlData: PropTypes.string,

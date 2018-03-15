@@ -12,6 +12,11 @@ npm install react-native-svg-src --save
 |---|---|---|---|
 | `src` | `String` | undefined | the content of SVG
 
+## TODO
+1. write document in Chinese
+2. add Symbol tag support
+3. rotation(rotate in transform) seems to be not support, I will have a check, and reduce unnecessary rotate
+
 ## <a name="Usage">Usage</a>
 Maybe you feel why the src is the content of svg instead of the path of static file
 
