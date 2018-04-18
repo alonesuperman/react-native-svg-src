@@ -1,5 +1,5 @@
 # react-native-svg-src
-Render an SVG Image from local file such as src. This lib is fork on react-native-svg-uri@1.2.3. But I will keep updating for this one.
+Render an SVG Image from local file in the src directory. This lib is fork from react-native-svg-uri@1.2.3. But I will keep updating for this one.
 
 Install library from `npm`
 
@@ -15,7 +15,7 @@ npm install react-native-svg-src --save
 ## TODO
 1. write document in Chinese
 2. add Symbol tag support
-3. rotation(rotate in transform) seems to be not support, I will have a check, and reduce unnecessary rotate
+3. rotation(rotate in transform) seems to be unsupport, I will have a check, and reduce unnecessary rotation
 
 ## <a name="Usage">Usage</a>
 Maybe you feel why the src is the content of svg instead of the path of static file
