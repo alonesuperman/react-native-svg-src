@@ -1,6 +1,6 @@
 {
   "name": "react-native-svg-src",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Render an SVG Image from local file such as src. This lib is fork on react-native-svg-uri@1.2.3",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
     "xmldom": "^0.1.22"
   },
   "peerDependencies": {
-    "react-native-svg": "^6.2.2"
+    "react-native-svg": "~6.2.2"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
