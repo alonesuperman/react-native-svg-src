@@ -48,7 +48,7 @@ const SVG_ATTS = ['viewBox', 'width', 'height'];
 const G_ATTS = ['id', "transform"];
 
 const CIRCLE_ATTS = ['cx', 'cy', 'r'];
-const PATH_ATTS = ['d', 'id'];
+const PATH_ATTS = ['d', 'id', "transform"];
 const USE_ATTS = ['href'];
 const RECT_ATTS = ['width', 'height'];
 const LINE_ATTS = ['x1', 'y1', 'x2', 'y2'];

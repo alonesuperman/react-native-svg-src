@@ -11,6 +11,7 @@ npm install react-native-svg-src --save
 | Prop | Type | Default | Note |
 |---|---|---|---|
 | `src` | `String` | undefined | the content of SVG
+| `fill` | `String` | undefined | override the color by custom fill
 
 ## TODO
 1. write document in Chinese
