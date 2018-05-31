@@ -151,10 +151,13 @@ class SvgSrc extends Component {
 
     // Remove empty strings from children array  
     trimElementChilden(children) {
-        for (child of children) {
-            if (typeof child === 'string') {
-                if (child.trim.length === 0)
-                    children.splice(children.indexOf(child), 1);
+        for (let i = 0; i < children.length; i++) {
+            const child = children[i];
+            if (typeof child === 'string' && !utils.hasText(child)) {
+                children.splice(i, 1);
+                // because we delete element of array in a loop;
+                // so we should change the index
+                i--;
             }
         }
     }
@@ -265,7 +268,13 @@ class SvgSrc extends Component {
         // Recursive function.
         if (node.childNodes && node.childNodes.length > 0) {
             for (let i = 0; i < node.childNodes.length; i++) {
-                const isTextValue = node.childNodes[i].nodeValue
+                const isTextValue = node.childNodes[i].nodeValue;
+                const nodeName = node.childNodes[i].nodeName;
+                // remove comment of svg
+                if (nodeName === "#comment") {
+                    continue;
+                }
+
                 if (isTextValue) {
                     arrayElements.push(node.childNodes[i].nodeValue)
                 } else {

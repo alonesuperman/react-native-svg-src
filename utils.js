@@ -23,3 +23,5 @@ export const transformStyle = ({ nodeName, nodeValue, fillProp }) => {
 };
 
 export const getEnabledAttributes = enabledAttributes => ({ nodeName }) => enabledAttributes.includes(camelCase(nodeName));
+
+export const hasText = str => str.trim().replace(/(\r)|(\t)|(\n)/g, "").length > 0;
