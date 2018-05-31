@@ -274,7 +274,8 @@ class SvgSrc extends Component {
                 if (nodeName === "#comment") {
                     continue;
                 }
-
+                // if wanna remove all the unaccepted tag, here should be "if(isTextValue && !ACCEPTED_SVG_ELEMENTS.includes(node.nodeName))"
+                // maybe I will change this logic at the next version
                 if (isTextValue) {
                     arrayElements.push(node.childNodes[i].nodeValue)
                 } else {
